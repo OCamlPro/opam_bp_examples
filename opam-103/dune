@@ -8,3 +8,9 @@
  (name helloer_lib)
  (modules helloer_lib)
 )
+
+(test
+ (name test)
+ (libraries alcotest helloer_lib)
+ (modules test)
+)
