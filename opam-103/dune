@@ -1,5 +1,7 @@
 (executable
+ (public_name helloer)
  (name helloer)
+ (package helloer)
  (libraries cmdliner helloer_lib)
  (modules helloer)
 )
