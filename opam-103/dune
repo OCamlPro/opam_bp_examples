@@ -2,3 +2,8 @@
  (name helloer)
  (modules helloer)
 )
+
+(library
+ (name helloer_lib)
+ (modules helloer_lib)
+)
