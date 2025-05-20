@@ -1,5 +1,6 @@
 (executable
  (name helloer)
+ (libraries cmdliner helloer_lib)
  (modules helloer)
 )
 
