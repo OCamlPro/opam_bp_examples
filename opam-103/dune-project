@@ -1,2 +1,4 @@
 (lang dune 3.15)
 (package (name helloer))
+
+(cram enable)

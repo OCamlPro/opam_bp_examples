@@ -16,3 +16,7 @@
  (libraries alcotest helloer_lib)
  (modules test)
 )
+
+(cram
+  (deps %{bin:helloer})
+)
