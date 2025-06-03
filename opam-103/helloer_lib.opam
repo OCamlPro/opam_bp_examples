@@ -6,6 +6,7 @@ depends: [
 build: [
  [ "dune" "build" "-p" name ]
  [ "dune" "runtest" ] {with-test}
+ [ "dune" "build" "@doc" ] {with-doc}
 ]
 install: [ "dune" "install" ]
 
