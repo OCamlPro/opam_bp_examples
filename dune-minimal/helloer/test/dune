@@ -1,2 +1,9 @@
 (test
- (name test_helloer))
+ (name test)
+ (libraries alcotest helloer_lib)
+ (modules test)
+)
+
+(cram
+  (deps %{bin:helloer})
+)
