@@ -1,0 +1,11 @@
+opam-version: "2.0"
+depends: [
+  "ocaml"
+  "alcotest" {with-test}
+]
+build: [
+ [ "dune" "build" "-p" name ]
+ [ "dune" "runtest" ] {with-test}
+]
+install: [ "dune" "install" ]
+
