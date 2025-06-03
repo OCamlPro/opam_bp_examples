@@ -4,23 +4,33 @@
 
 (generate_opam_files true)
 
+(authors "Welcomer <hell@er.com>")
+
+(maintainers "Welcomer <hell@er.com>")
+
 (source
- (github username/reponame))
+ (uri "https://github.com/OCamlPro/opam_bp_examples"))
 
-(authors "Author Name <author@example.com>")
+(homepage "https://github.com/OCamlPro/opam_bp_examples")
 
-(maintainers "Maintainer Name <maintainer@example.com>")
-
-(license LICENSE)
+(bug_reports "https://github.com/OCamlPro/opam_bp_examples")
 
 (documentation https://url/to/documentation)
 
 (package
  (name helloer)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "HW")
+ (description "A simple tool to display several types of 'hello world'")
+ (depends ocaml alcotest)
+ (tags
+  ("toy project" "dune")))
+
+(package
+ (name helloer_lib)
+ (synopsis "HWL")
+ (description "The library that permit to choose between several tones of greetings")
  (depends ocaml)
  (tags
-  ("add topics" "to describe" your project)))
+  ("toy project" "dune")))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html

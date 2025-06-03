@@ -1,2 +1,6 @@
 (library
- (name helloer))
+ (public_name helloer_lib)
+ (name helloer_lib)
+ (modules helloer_lib)
+)
+
